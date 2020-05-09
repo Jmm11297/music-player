@@ -10,9 +10,9 @@ body {
 }
 
 #songList {
-    background: rgba(1, 5, 2, 0.418);
+    background: rgba(1, 5, 2, 0.281);
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 h4 {
@@ -23,21 +23,23 @@ h4 {
 
 li {
     padding: 15px;
+    font-weight: 100;
 }
 
-li:hover, svg:hover {
+li:hover, .far:hover {
     cursor: pointer;
-    color: white;
+    color: rgb(201, 201, 201);
 }
 
 #controls {
     border-radius: 10px;
     background: rgba(1, 5, 2, 0.418);
     padding: 1.5em;
+    margin-top: 40px;
 }
 
-#far {
-    color: #655A7C;
+.far {
+    color: #151A50;
 }
 
 .meter {
@@ -68,8 +70,27 @@ li:hover, svg:hover {
     overflow: hidden;
 }
 
+progress::-webkit-progress-value {
+    background: lightblue;
+}
+
+
 span {
     color: white;
     font-size: 25px;
     font-weight: 100;
+    margin-bottom: 10px;
 }
+
+@media screen and (max-width:723px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    #songList {
+        
+    }
+}
+
+

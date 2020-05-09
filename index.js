@@ -9,7 +9,6 @@ const songs = [
     "2019-08-09_-_Vibes_-_www.fesliyanstudios.com_-_David_Renda.mp3",
     "bensound-acousticbreeze.mp3",
     "bensound-adaytoremember.mp3",
-    "bensound-allthat(1).mp3",
     "bensound-allthat.mp3",
     "bensound-anewbeginning.mp3",
     "bensound-beyondtheline.mp3",
