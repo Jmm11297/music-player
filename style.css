@@ -1,6 +1,7 @@
 body {
-    background: radial-gradient(#6980BE, #A17EC8);
+    background: radial-gradient(rgb(34, 107, 107),rgb(67, 202, 239) );
     font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 50%;
     margin: 20px auto;
     padding: 20px;
@@ -9,9 +10,15 @@ body {
 }
 
 #songList {
-    background: #C1CEFE;
+    background: rgba(1, 5, 2, 0.418);
     border-radius: 10px;
     text-align: left;
+}
+
+h4 {
+    font-size: 35px;
+    color: white;
+    font-weight: 100;
 }
 
 li {
@@ -20,16 +27,49 @@ li {
 
 li:hover, svg:hover {
     cursor: pointer;
+    color: white;
 }
 
 #controls {
-    border: 1px lightgray solid;
     border-radius: 10px;
-    background: #C1CEFE;
+    background: rgba(1, 5, 2, 0.418);
     padding: 1.5em;
 }
 
-svg {
+#far {
     color: #655A7C;
 }
 
+.meter {
+    height: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    position: relative;
+    background: #151A50;
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > progress {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(34, 107, 107);
+    box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
